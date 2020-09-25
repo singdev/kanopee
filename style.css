@@ -1,0 +1,330 @@
+    /**
+      font-family: 'Marvel', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Reem Kufi', sans-serif;
+    */
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    main {
+        background: url(./img/background.png);
+        background-repeat: no-repeat;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(#6B9E6A, #43634200);
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+    }
+
+    .flex-space {
+        flex-grow: 10;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    header .button {
+        background-color: white;
+        font-size: 16px;
+        display: inline-block;
+        padding: 8px 32px;
+        color: black;
+        border-radius: 5px;
+        height: fit-content;
+    }
+
+    .logo-container {
+        position: sticky;
+        top: -22vh;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .home {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .home p {
+        font-family: 'Marvel', sans-serif;
+        font-size: 1.5em;
+        padding-top: 20px;
+        text-align: center;
+        width: 70%;
+    }
+
+    .logo-kanopee {
+        width: 5%;
+        height: auto;
+    }
+
+    .absolute-background {
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .main-section>section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 40%;
+    }
+
+    h1 {
+        font-family: 'Marvel', sans-serif;
+        font-size: 2.0em;
+        padding-top: 0px;
+        padding-bottom: 40px;
+        width: 100%;
+        font-weight: normal;
+    }
+
+    .main-section .circle-img {
+        margin-top: 40px;
+    }
+
+    .carte-gabon {
+        width: 80%;
+    }
+
+    .circle-img {
+        width: 300px;
+        height: 300px;
+        border-radius: 400px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-img img {
+        width: 300px;
+        height: auto;
+    }
+
+    .local {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 10%;
+    }
+
+    .local h1 {
+        text-align: end;
+        width: 50%;
+    }
+
+    .local p {
+        width: 60%;
+        text-align: right;
+    }
+
+    .miel {
+        width: 100%;
+        height: 60vh;
+        background: url(./img/miel.png);
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .miel h2 {
+        padding: 20px;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .testimonial {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .testimonial i {
+        font-size: 24px;
+        color: #777777;
+        margin-right: 16px;
+    }
+
+    .section-produit h3 {
+        text-align: center;
+        font-size: 2.0em;
+        font-family: 'Oswald', sans-serif;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .produits {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+    .square {
+        width: 100px;
+        height: 400px;
+    }
+
+    .produit {
+        width: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+    }
+
+    .qui-sommes-nous {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(#ffffff, #FFDE69, #FFDE69,#ffffff);
+        justify-content: center;
+    }
+
+    .qui-sommes-nous h1, .qui-sommes-nous h2 {
+        text-align: center;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 500;
+    }
+
+    .qui-sommes-nous h1 {
+        margin-top: 80px;
+    }
+
+    .equipes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 80vh;
+    }
+
+    .equipe {
+        width: 30%;
+        text-align: center;
+    }
+
+    footer {
+
+        background: #6B9E6A;
+        /*background: linear-gradient(#ffffff, #6B9E6A);*/
+        padding: 20px;
+        color: white;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contacts > div {
+        width: 50%;
+    }
+
+    .contacts h2 {
+        font-weight: normal;
+        font-family: 'Marvel', sans-serif;
+        padding-bottom: 16px;
+    }
+
+    .contacts .socials a {
+        color: white;
+        font-size: 24px;
+        margin-right: 40px;
+    }
+
+    .circle-img-2 {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        overflow: hidden;
+    }
+
+    .circle-img-2 img {
+        width: 100%;
+    }
+
+    section {
+        margin-top: 80px;
+    }
+
+    .equipe img {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-color: white;
+    }
+
+    .temoignages {
+        background: url(./img/frame1.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 60vh;
+        background-size: 100px;
+    }
+
+    .produits {
+        background: url(./img/frame2.png);
+        background-position: -100px left;
+        background-repeat: no-repeat;
+        background-size: 100px;
+    }

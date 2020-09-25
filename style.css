@@ -9,6 +9,7 @@
         margin: 0px;
         box-sizing: border-box;
         font-family: 'Hind Siliguri', sans-serif;
+        scroll-behavior: smooth;
     }
 
     main {
@@ -52,15 +53,16 @@
 
     .logo-container {
         position: sticky;
-        top: -22vh;
+        top: 0vh;
         left: 0px;
         width: 100%;
         text-align: center;
-        height: 40vh;
+        height: 20vh;
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: center;
+        margin-top: 22vh;
     }
 
     .home {
@@ -80,7 +82,7 @@
     }
 
     .logo-kanopee {
-        width: 5%;
+        width: 50px;
         height: auto;
     }
 
@@ -98,6 +100,7 @@
         flex-direction: row;
         justify-content: center;
         margin-top: 80px;
+        flex-wrap: wrap;
     }
 
     .main-section>section {
@@ -182,13 +185,15 @@
         width: 100%;
         justify-content: space-evenly;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .testimonial {
-        width: 40%;
+        width: 300px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        margin-top: 40px;
     }
 
     .testimonial i {
@@ -252,12 +257,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        height: 80vh;
+        height: 100vh;
     }
 
     .equipe {
-        width: 30%;
+        width: 300px;
         text-align: center;
+        margin: 16px;
     }
 
     footer {
@@ -318,8 +324,9 @@
         background: url(./img/frame1.png);
         background-position: right;
         background-repeat: no-repeat;
-        height: 60vh;
+        height: 80vh;
         background-size: 100px;
+        padding-top: 20px;
     }
 
     .produits {
@@ -327,4 +334,54 @@
         background-position: -100px left;
         background-repeat: no-repeat;
         background-size: 100px;
+    }
+
+    .produit:nth-child(odd){
+        position: relative;
+        top: 100px;
+    }
+
+    .produit {
+        padding-top: 80px;
+    }
+
+    video {
+        margin-top: 80px;
+        background-color: black;
+        width: 100vw;
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 900px){
+        .main-section > section {
+            width: 100%;
+            padding: 40px;
+        }
+
+        .carte-gabon {
+            width: 100%;
+        }
+
+        .local {
+            width: 100%;
+            justify-content: flex-start;
+            margin-right: 0px;
+            padding: 40px;
+        }
+
+        .local h1 {
+            width: 100%;
+            text-align: left;
+        }
+
+        .local p {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .produit:nth-child(odd) {
+            top: 0;
+        }
     }

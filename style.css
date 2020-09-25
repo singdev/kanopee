@@ -84,6 +84,7 @@
     .logo-kanopee {
         width: 50px;
         height: auto;
+        z-index: 30;
     }
 
     .absolute-background {
@@ -352,6 +353,20 @@
         height: 50vh;
     }
 
+    .section-emploi {
+        background: url(./img/frame4.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 100px;
+    }
+
+    .local {
+        background: url(./img/frame5.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 100px;
+    }
+
     @media screen and (max-width: 900px){
         .main-section > section {
             width: 100%;
@@ -383,5 +398,14 @@
     @media screen and (max-width: 600px) {
         .produit:nth-child(odd) {
             top: 0;
+        }
+
+        .logo-kanopee {
+            width: 30px;
+        }
+
+        header .button {
+            font-size: 12px;
+            padding: 8px;
         }
     }

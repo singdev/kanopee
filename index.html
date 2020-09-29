@@ -10,31 +10,57 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Marvel&family=Oswald&family=Reem+Kufi&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="arrow.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="landing_page_mobile.css">
     <title>Kanopee</title>
 </head>
 
 <body>
 
     <header>
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <div class="flex-space"></div>
-        <a href="#contact" class="button">Contactez nous</a>
+        <img src="./img/kanopee.png" alt="" class="logo">
+        <div class="drawer">
+            <nav>
+                <a href="#">Accueil</a>
+                <a href="#presentation">Présentation</a>
+                <a href="#temoignage">Témoignages</a>
+                <a href="#produit">Produits</a>
+                <a href="#equipe">Equipe</a>
+            </nav>
+
+            <div class="actions">
+                <a href="#contacts" class="button">Contactez nous</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button class="menu-button">
+                <span>&times;</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <main>
-        <div class="logo-container">
-            <img src="./img/kanopee.png" class="logo-kanopee" alt="Logo Kanopee">
-        </div>
         <div class="home">
-            <p>Nos produits apicoles sont méticuleusement récoltés localement pour le bonheur des consommateurs friands
+            <img src="./img/kanopee.png" class="logo-kanopee" alt="Logo Kanopee">
+            <p class="animate__animated animate__backInUp animate__pulse">Nos produits apicoles sont méticuleusement récoltés localement pour le bonheur des consommateurs friands
                 de miel et à la recherche d’un produit de qualité, équilibré et écologiquement responsable.</p>
+        </div>
+        <div class="downArrow bounce">
+            <a href="#presentation">
+                <img width="40" height="40" alt=""
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+            </a>
         </div>
         <div class="absolute-background"></div>
 
         <div class="main-section section-emploi">
-            <section>
+            <section >
                 <h1>Un pot de miel acheté, un emploie créé.</h1>
                 <p>KANOPEE emploie et forme les populations locales qui bénéficient des revenus de la vente du miel
                     grâce à
@@ -175,7 +201,7 @@
                     <p>contact@kanopee.com</p>
                     <p>Rue Pecqueur</p>
                 </div>
-    
+
                 <div class="socials">
                     <h2>Réseaux sociaux</h2>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -185,6 +211,24 @@
         </footer>
     </main>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+        document.querySelector('.menu-button').addEventListener('click', (e) => {
+            const drawer = document.querySelector('.drawer');
+            drawer.classList.toggle('show-drawer');
+            if (drawer.classList.contains('show-drawer')) {
+                document.querySelector('button.menu-button').querySelector('i').style.display = 'none';
+                document.querySelector('button.menu-button').querySelector('span').style.display = 'inline';
+
+            } else {
+                document.querySelector('button.menu-button').querySelector('i').style.display = 'inline';
+                document.querySelector('button.menu-button').querySelector('span').style.display = 'none';
+            }
+        })
+    </script>
 </body>
 
 </html>

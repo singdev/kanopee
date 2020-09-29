@@ -51,26 +51,17 @@
         height: fit-content;
     }
 
-    .logo-container {
-        position: sticky;
-        top: 0vh;
-        left: 0px;
-        width: 100%;
-        text-align: center;
-        height: 20vh;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 22vh;
-    }
-
     .home {
-        height: 40vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
+    }
+
+    .home .logo-kanopee {
+        width: 100px;
+        height: auto;    
     }
 
     .home p {

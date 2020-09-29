@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
+
+.menu {
+    display: none;
+}
+
+.drawer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 8;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+header nav a {
+    padding-right: 16px;
+    text-decoration: none;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+header nav a:hover {
+    color: #cccccc;
+}
+
+header button {
+    margin-right: 16px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
